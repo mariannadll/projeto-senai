@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Login - Clínica Vida</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <main class="container">
+
+        <section class="login-box">
+
+            <!-- Logo -->
+            <div class="logo">
+                <div class="logo-icon">♥</div>
+
+                <div>
+                    <h1>Clínica Vida</h1>
+                    <p>Cuidando de você</p>
+                </div>
+            </div>
+
+            <!-- Título -->
+            <div class="welcome">
+                <h2>Bem-vindo!</h2>
+                <p>Entre na sua conta para continuar.</p>
+            </div>
+
+            <!-- Login -->
+            <form id="loginForm">
+
+                <div class="input-group">
+                    <label for="usuario">E-mail ou CPF</label>
+
+                    <input
+                        type="text"
+                        id="usuario"
+                        placeholder="Digite seu e-mail ou CPF"
+                        required
+                    >
+                </div>
+
+                <div class="input-group">
+                    <label for="senha">Senha</label>
+
+                    <input
+                        type="password"
+                        id="senha"
+                        placeholder="Digite sua senha"
+                        required
+                    >
+                </div>
+
+                <div class="forgot-password">
+                    <a href="recuperar-senha.html">
+                        Esqueci minha senha
+                    </a>
+                </div>
+
+                <button type="submit" class="btn-login">
+                    ENTRAR
+                </button>
+
+            </form>
+
+            <!-- Cadastro -->
+            <div class="register">
+                <p>
+                    Não tem uma conta?
+                    <a href="cadastro.html">Criar uma</a>
+                </p>
+            </div>
+
+        </section>
+
+        <!-- Área visual -->
+        <section class="illustration">
+
+            <div class="circle">
+                <span>+</span>
+            </div>
+
+            <h2>
+                Saúde e bem-estar
+                <br>
+                em um só lugar.
+            </h2>
+
+            <p>
+                Agende suas consultas de forma
+                simples, rápida e segura.
+            </p>
+
+        </section>
+
+    </main>
+
+    <script src="script.js"></script>
+
+</body>
+
+</html>

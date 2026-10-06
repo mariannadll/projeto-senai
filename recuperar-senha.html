@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Recuperar Senha - Clínica Vida Leve</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <main class="container">
+
+        <section class="form-box">
+
+            <!-- LOGO -->
+            <div class="logo">
+
+                <div class="logo-icon">
+                    ♥
+                </div>
+
+                <div>
+                    <h1>Clínica Vida Leve</h1>
+                    <p>Cuidando de você</p>
+                </div>
+
+            </div>
+
+
+            <!-- TÍTULO -->
+            <div class="welcome">
+
+                <h2>Recuperar senha</h2>
+
+                <p>
+                    Digite o e-mail cadastrado
+                    para recuperar sua senha.
+                </p>
+
+            </div>
+
+
+            <!-- ==========================
+                 ETAPA 1
+                 ========================== -->
+
+            <form id="recuperarForm">
+
+                <div class="input-group">
+
+                    <label for="emailRecuperacao">
+                        E-mail
+                    </label>
+
+                    <input
+                        type="email"
+                        id="emailRecuperacao"
+                        placeholder="Digite seu e-mail"
+                        required
+                    >
+
+                </div>
+
+                <button
+                    type="submit"
+                    class="btn-login"
+                >
+                    ENVIAR CÓDIGO
+                </button>
+
+            </form>
+
+
+            <!-- ==========================
+                 ETAPA 2
+                 ========================== -->
+
+            <form
+                id="codigoForm"
+                style="display: none;"
+            >
+
+                <div class="message success">
+
+                    Código enviado!
+
+                    <br><br>
+
+                    Para testar o sistema,
+                    utilize o código:
+
+                    <strong>123456</strong>
+
+                </div>
+
+
+                <div class="input-group">
+
+                    <label for="codigo">
+                        Código de recuperação
+                    </label>
+
+                    <input
+                        type="text"
+                        id="codigo"
+                        placeholder="Digite o código"
+                        maxlength="6"
+                        required
+                    >
+
+                </div>
+
+
+                <button
+                    type="submit"
+                    class="btn-login"
+                >
+                    CONFIRMAR CÓDIGO
+                </button>
+
+            </form>
+
+
+            <!-- ==========================
+                 ETAPA 3
+                 ========================== -->
+
+            <form
+                id="novaSenhaForm"
+                style="display: none;"
+            >
+
+                <div class="welcome">
+
+                    <p>
+                        Agora crie uma nova senha
+                        para sua conta.
+                    </p>
+
+                </div>
+
+
+                <div class="input-group">
+
+                    <label for="senhaRecuperada">
+                        Nova senha
+                    </label>
+
+                    <input
+                        type="password"
+                        id="senhaRecuperada"
+                        placeholder="Digite a nova senha"
+                        required
+                    >
+
+                </div>
+
+
+                <div class="input-group">
+
+                    <label for="confirmarSenhaRecuperada">
+                        Confirmar nova senha
+                    </label>
+
+                    <input
+                        type="password"
+                        id="confirmarSenhaRecuperada"
+                        placeholder="Digite novamente a senha"
+                        required
+                    >
+
+                </div>
+
+
+                <button
+                    type="submit"
+                    class="btn-login"
+                >
+                    ALTERAR SENHA
+                </button>
+
+            </form>
+
+
+            <!-- VOLTAR PARA LOGIN -->
+
+            <div class="register">
+
+                <p>
+
+                    Lembrou sua senha?
+
+                    <a href="index.html">
+                        Voltar para o login
+                    </a>
+
+                </p>
+
+            </div>
+
+        </section>
+
+    </main>
+
+
+    <!-- IMPORTANTE:
+         O script deve estar no final da página -->
+
+    <script src="script.js"></script>
+
+</body>
+
+</html>
